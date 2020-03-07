@@ -10,7 +10,7 @@ spring:
     name: microservicecloud-config-client
 eureka:
   client:
-    server-url:
+    service-url:
       defaultZone: http://www.eureka7001.com:7001/eureka/,http://www.eureka7002.com:7002/eureka/,http://www.eureka7003.com:7003/eureka/
   instance:
     instance-id: ${spring.application.name}:${server.port}
@@ -24,7 +24,7 @@ spring:
     name: microservicecloud-config-client
 eureka:
   client:
-    server-url:
+    service-url:
       defaultZone: http://www.eureka7001.com:7001/eureka/,http://www.eureka7002.com:7002/eureka/,http://www.eureka7003.com:7003/eureka/
   instance:
     instance-id: ${spring.application.name}:${server.port}
