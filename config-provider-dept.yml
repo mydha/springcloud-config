@@ -20,11 +20,6 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${server.port}
     prefer-ip-address: true
-info:
-  app.name: ${spring.application.name}
-  compnay.name: www.jiuyun.com
-  build.artifactId: @project.artifactId@
-  build.version: @project.version@
 ---
 server:
   port: 8001
