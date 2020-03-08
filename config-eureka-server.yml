@@ -1,0 +1,24 @@
+server:
+  port: 7000
+eureka:
+  instance:
+    hostname: www.eureka7001.com
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://www.eureka7001.com:7001/eureka/
+---
+server:
+  port: 7001
+spring:
+  profiles: dev
+  application:
+    name: config-eureka-server-dev
+---
+server:
+  port: 7002
+spring:
+  profiles: test
+  application:
+    name: config-eureka-server-test
