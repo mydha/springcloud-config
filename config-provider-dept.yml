@@ -26,7 +26,7 @@ server:
 spring:
   profiles: dev
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/clouddb01?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&autoReconnect=true&failOverReadOnly=false&autoReconnectForPools=true
+    url: jdbc:mysql://127.0.0.1:3306/clouddb02?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&autoReconnect=true&failOverReadOnly=false&autoReconnectForPools=true
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -42,7 +42,7 @@ server:
 spring:
   profiles: test
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/clouddb01?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&autoReconnect=true&failOverReadOnly=false&autoReconnectForPools=true
+    url: jdbc:mysql://127.0.0.1:3306/clouddb03?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&autoReconnect=true&failOverReadOnly=false&autoReconnectForPools=true
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
