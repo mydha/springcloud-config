@@ -7,7 +7,7 @@ eureka:
     instance-id: ${spring.application.name}:${server.port}
   client:
     service-url:
-      defaultZone: http://www.eureka7001.com:7001/eureka/
+      defaultZone: http://www.eureka7001.com:7000/eureka/
 ---
 server:
   port: 7001
@@ -15,6 +15,9 @@ spring:
   profiles: dev
   application:
     name: config-eureka-server-dev
+  client:
+    service-url:
+      defaultZone: http://www.eureka7001.com:7001/eureka/
 ---
 server:
   port: 7002
@@ -22,3 +25,6 @@ spring:
   profiles: test
   application:
     name: config-eureka-server-test
+  client:
+    service-url:
+      defaultZone: http://www.eureka7001.com:7002/eureka/
