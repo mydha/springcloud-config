@@ -16,7 +16,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://www.eureka7001.com:7001/eureka/
+      defaultZone: http://www.eureka7001.com:7000/eureka/
   instance:
     instance-id: ${spring.application.name}:${server.port}
     prefer-ip-address: true
@@ -34,6 +34,10 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/clouddb02?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&autoReconnect=true&failOverReadOnly=false&autoReconnectForPools=true
   application:
     name: microservicecloud-provider-dept-dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://www.eureka7001.com:7001/eureka/
 ---
 server:
   port: 8002
@@ -43,3 +47,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/clouddb03?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&autoReconnect=true&failOverReadOnly=false&autoReconnectForPools=true
   application:
     name: microservicecloud-provider-dept-test
+eureka:
+  client:
+    service-url:
+      defaultZone: http://www.eureka7001.com:7002/eureka/
