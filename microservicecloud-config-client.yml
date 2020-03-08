@@ -1,3 +1,6 @@
+spring:
+  application:
+    name: microservicecloud-config-client
 eureka:
   client:
     service-url:
@@ -10,12 +13,8 @@ server:
   port: 8203
 spring:
   profiles: dev
-  application:
-    name: microservicecloud-config-client
 ---
 server:
   port: 8204
 spring:
   profiles: test
-  application:
-    name: microservicecloud-config-client
